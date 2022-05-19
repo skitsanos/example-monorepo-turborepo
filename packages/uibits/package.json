@@ -1,0 +1,34 @@
+{
+    "name": "@skitsanos/uibits",
+    "version": "1.0.0",
+    "license": "MIT",
+    "main": "./dist/main.umd.js",
+    "module": "./dist/main.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/uibits.es.js",
+            "require": "./dist/uibits.umd.js"
+        }
+    },
+    "scripts": {
+        "dev": "vite build --watch --config vite.lib.config.js",
+        "build": "rm -rf ./dist && vite build --config vite.lib.config.js",
+        "test": "jest --watch",
+        "lint": "eslint --fix --quiet .",
+        "autofix": "eslint --quiet --fix .",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "vite": "^2.9.9"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^1.3.2"
+    },
+    "peerDependencies": {
+        "ahooks": "^3.3.12",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    }
+}
