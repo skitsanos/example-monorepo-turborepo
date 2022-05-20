@@ -86,6 +86,7 @@ Please note - while developing, every change in the UI Components library will a
 
 ### References
 
+- [What Is A Monorepo And Why You Should Care](https://www.youtube.com/watch?v=VvcJGjjEyKo)
 - [Why TurboRepo Will Be The First Big Trend of 2022](https://dev.to/swyx/why-turborepo-will-be-the-first-big-trend-of-2022-4gfj)
 - [Is Turborepo overhyped?](https://tolgee.io/blog/turborepo-overhyped)
 - [Monorepos are changing how teams build software](https://vercel.com/blog/monorepos-are-changing-how-teams-build-software)
