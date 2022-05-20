@@ -53,24 +53,41 @@ The basic principle of TurboRepo is to **never recompute work that has been done
 
 To do this, it generates a dependency graph from your build pipeline from a `turbo` config in package.json, executes each task in turn, and fingerprints the input/caches the output of each task.
 
-When it is run a second time, if it finds work that matches a fingerprint, it restores from cache and **replays the logs**.
+When it is run a second time, if it finds work that matches a fingerprint, it restores from the cache and **replays the logs**.
 
 
 
-Example on how to use Turborepo, UI components bundled with Vite.js and Frontend app Done with Umi.js
+## This repo
+
+>  This repo is an example of how to use Turborepo, UI components bundled with Vite.js, and the Frontend app Done with Umi.js.
 
 ### How to use
 
-To run components _rebuild-on-change_:
+Clone the repo
 
 ```shell
-cd packages/uibits/
+git clone git@github.com:skitsanos/example-monorepo-turborepo.git
+```
+
+Install dependencies
+
+```shell
+cd example-monorepo-turborepo/
+yarn
+```
+
+Run the whole thing
+
+```shell
 yarn run dev
 ```
 
-To run _frontend_
+Please note - while developing, every change in the UI Components library will automatically update the frontend as well, without a need to restart it.
 
-```shell
-cd apps/frontend/
-yarn run dev
-```
+### References
+
+- [Why TurboRepo Will Be The First Big Trend of 2022](https://dev.to/swyx/why-turborepo-will-be-the-first-big-trend-of-2022-4gfj)
+- [Is Turborepo overhyped?](https://tolgee.io/blog/turborepo-overhyped)
+- [Monorepos are changing how teams build software](https://vercel.com/blog/monorepos-are-changing-how-teams-build-software)
+- [Migrating from Lerna to Turborepo](https://turborepo.org/docs/guides/migrate-from-lerna)
+- [Turborepo vs Nx](https://nx.dev/guides/turbo-and-nx)
